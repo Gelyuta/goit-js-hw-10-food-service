@@ -13,12 +13,20 @@ console.log(body)
 function onThemeSwich(){
 
 if (inputEl.checked === true){
+  document.body.classList.remove(Theme.LIGHT)
 document.body.classList.add(Theme.DARK) 
 } else {
-document.body.classList.remove(Theme.DARK)
+  document.body.classList.remove(Theme.DARK)
 document.body.classList.add(Theme.LIGHT) 
   }
 } 
 
+console.log(localStorage)
 
+// function onCurrentTheme (){
+ 
+//   }
+
+
+localStorage.setItem('current-theme', onThemeSwich)
  
