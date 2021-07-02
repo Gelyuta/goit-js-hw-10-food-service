@@ -1,3 +1,3 @@
 import './sass/main.css';
 import './js/menu';
-// import './js/localstorage';
+import './js/theme';

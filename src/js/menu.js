@@ -9,4 +9,3 @@ const menuEl = document.querySelector('ul.js-menu');
 const createMenuMarkup = cardsTpl(menu);
 
 menuEl.insertAdjacentHTML('beforeend', createMenuMarkup);
-
