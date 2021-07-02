@@ -21,12 +21,4 @@ document.body.classList.add(Theme.LIGHT)
   }
 } 
 
-console.log(localStorage)
-
-// function onCurrentTheme (){
- 
-//   }
-
-
-localStorage.setItem('current-theme', onThemeSwich)
  
