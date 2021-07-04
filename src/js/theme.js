@@ -40,7 +40,7 @@ function onCurrentTheme() {
     document.body.classList.add(Theme.LIGHT);
   
     localStorage.setItem('current-theme', Theme.LIGHT);
-    inputEl.checked.false;
+    inputEl.checked = false;
   } else {
     document.body.classList.remove(Theme.LIGHT);
     document.body.classList.add(Theme.DARK);
