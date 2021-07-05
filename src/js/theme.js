@@ -14,6 +14,7 @@ inputEl.addEventListener('change', onThemeSwich)
 const body =document.querySelector('body')
 console.log(body)
 
+
 // Переключение темы со светлой на темную и наоборот
 function onThemeSwich(){
 
@@ -41,11 +42,12 @@ function onCurrentTheme() {
         document.body.classList.add(Theme.DARK);
         localStorage.setItem('current-theme', Theme.DARK);
         inputEl.checked = true
+       
   
-    } else if (inputEl.checked = false) {
+    } else {
        document.body.classList.add(Theme.LIGHT);
        localStorage.setItem('current-theme', Theme.LIGHT);
-       
+      
     }
   }
 
