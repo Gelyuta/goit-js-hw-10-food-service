@@ -33,25 +33,37 @@ if (inputEl.checked === true){
 } 
 
 // Текущая тема
+// function onCurrentTheme() {
+
+//   const currentTheme = localStorage.getItem('current-theme');
+
+//   if(currentTheme === Theme.LIGHT){
+//     document.body.classList.add(Theme.LIGHT);
+//     inputEl.checked = false;
+
+//   } else {
+//     document.body.classList.add(Theme.DARK);
+//     localStorage.setItem('current-theme', Theme.DARK);
+//     inputEl.checked = true;
+//   }
+// }
+
 function onCurrentTheme() {
-  const currentTheme = localStorage.getItem('current-theme');
-  if(currentTheme === Theme.LIGHT){
-    document.body.classList.remove(Theme.DARK);
-    document.body.classList.add(Theme.LIGHT);
+
+    const currentTheme = localStorage.getItem('current-theme');
   
-    localStorage.setItem('current-theme', Theme.LIGHT);
-    inputEl.checked = false;
-  } else {
-    document.body.classList.remove(Theme.LIGHT);
-    document.body.classList.add(Theme.DARK);
-    inputEl.checked = true;
+    if(currentTheme === Theme.DARK){
+        document.body.classList.add(Theme.DARK);
+        localStorage.setItem('current-theme', Theme.DARK);
+      
   
-    localStorage.setItem('current-theme', Theme.DARK);
+    } else {
+       document.body.classList.add(Theme.LIGHT);
+       localStorage.setItem('current-theme', Theme.LIGHT);
+       inputEl.checked = false;
+    
+    }
   }
-}
 
 onCurrentTheme()
   
-     
-
-   
