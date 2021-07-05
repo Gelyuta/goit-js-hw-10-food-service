@@ -20,7 +20,6 @@ function onThemeSwich(){
 if (inputEl.checked === true){
   document.body.classList.remove(Theme.LIGHT);
   document.body.classList.add(Theme.DARK);
-  
 
   localStorage.setItem('current-theme', Theme.DARK);
 } else {
