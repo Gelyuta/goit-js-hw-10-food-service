@@ -32,20 +32,6 @@ if (inputEl.checked === true){
 } 
 
 // Текущая тема
-// function onCurrentTheme() {
-
-//   const currentTheme = localStorage.getItem('current-theme');
-
-//   if(currentTheme === Theme.LIGHT){
-//     document.body.classList.add(Theme.LIGHT);
-//     inputEl.checked = false;
-
-//   } else {
-//     document.body.classList.add(Theme.DARK);
-//     localStorage.setItem('current-theme', Theme.DARK);
-//     inputEl.checked = true;
-//   }
-// }
 
 function onCurrentTheme() {
 
@@ -56,16 +42,14 @@ function onCurrentTheme() {
         localStorage.setItem('current-theme', Theme.DARK);
         inputEl.checked = true
   
-    } else {
+    } else if (inputEl.checked = false) {
        document.body.classList.add(Theme.LIGHT);
        localStorage.setItem('current-theme', Theme.LIGHT);
-       inputEl.checked = false;
-    
+       
     }
   }
 
 onCurrentTheme()
   
-     
 
    
